@@ -1,0 +1,2 @@
+# cgo_mysql_for_windows
+cgo_mysql_for_windows
