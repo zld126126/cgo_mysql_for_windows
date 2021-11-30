@@ -77,8 +77,7 @@ func main() {
 				fieldValue_StrLen := C.GetMYSQLROWStrLen(row, C.int(j))
 				field_value := C.GoBytes(unsafe.Pointer(rowPtr[j]), C.int(fieldValue_StrLen))
 				if string(field_value) != "" {
-					fmt.Printf("[%d]field_name is : %s \n", j, string(field_name))
-					fmt.Printf("field_name is : %s , field_value is : %s \n", string(field_name), string(field_value))
+					fmt.Printf("[%d]field_name is : %s , field_value is : %s \n",j, string(field_name), string(field_value))
 				}
 			}
 		}
